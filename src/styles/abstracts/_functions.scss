@@ -1,0 +1,7 @@
+@function divide($a, $b) {
+    @return $a / $b;
+}
+
+@function calculateLayoutSize($desiredPx, $defaultValue) {
+    @return ($desiredPx * 100) / $defaultValue;
+}

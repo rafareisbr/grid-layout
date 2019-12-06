@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 75%;
+}
+
+body {
+    font-family: $font-primary;
+    line-height: 1.6;
+    color: $color-grey-dark-2;
+}
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [sidebar-start] 6.6rem [sidebar-end full-start] minmax(5rem, 1fr) 
+                                [center-start] 
+                                    repeat(8, [col-start] minmax(min-content, 12.5rem) [col-end]) 
+                                [center-end] minmax(5rem, 1fr)
+                            [full-end];
+}
+
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+}
+
+.heading-2 {
+    @extend %heading;
+}
+
+.heading-3 {
+    @extend %heading;
+}
+
+.heading-4 {
+    @extend %heading;
+}
