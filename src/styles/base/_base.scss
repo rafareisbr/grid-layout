@@ -47,4 +47,8 @@ body {
 
 .heading-4 {
     @extend %heading;
+    font-size: 1.58rem;
+
+    &--light { color: $color-grey-light-1 };
+    &--dark { color: $color-grey-dark-1 };
 }
